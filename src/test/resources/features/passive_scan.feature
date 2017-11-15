@@ -13,6 +13,5 @@ Feature: Passive Application Security Scanning
     And the following false positives are removed
       |url                    |parameter          |cweId      |wascId   |
       |http://tasks-dev.52.220.29.7.nip.io/||20|20|
-      |http://tasks-dev.52.220.29.7.nip.io/|X-Frame-Options|16|15|
     And the XML report is written to the file build/zap/passive.xml
     Then no Medium or higher risk vulnerabilities should be present
